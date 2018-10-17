@@ -1,8 +1,10 @@
-console.log('this is loaded');
+console.log('keys loaded');
 
 exports.spotify = {
   id: process.env.SPOTIFY_ID,
   secret: process.env.SPOTIFY_SECRET
 };
 
-
+exports.ombd = {
+  id: process.env.OMBD_ID,
+};

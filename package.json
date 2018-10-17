@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/willbursch/liri-node-app#readme",
   "dependencies": {
-    "eslint": "^5.7.0"
+    "dotenv": "^6.1.0",
+    "eslint": "^5.7.0",
+    "jshint": "^2.9.6",
+    "node-spotify-api": "^1.0.7"
   }
 }
