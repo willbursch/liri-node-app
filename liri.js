@@ -3,7 +3,9 @@ const fs = require('fs');
 const keys = require("./keys");
 const Spotify = require('node-spotify-api');
 const spotify = new Spotify(keys.spotify);
+const request = require("request");
 
+//Spotify 
 
 const getSpotify = function (songName) {
      
@@ -18,8 +20,8 @@ const getSpotify = function (songName) {
     };
 
 
-
-var pick = function (caseData, functionData) {
+//Switch Statement to execute the command from the user
+const pick = function (caseData, functionData) {
     switch (caseData) {
         case 'spotify-this-song':
         getSpotify(functionData);
@@ -28,7 +30,7 @@ var pick = function (caseData, functionData) {
       console.log('LIRI no comprende');
     }};
 
-var runThis = function(argOne, argTwo) {
+const runThis = function(argOne, argTwo) {
     pick(argOne, argTwo);
 };
 
@@ -36,3 +38,5 @@ runThis(process.argv[2], process.argv[3]);
 
 //OMDb Api
 //http://www.omdbapi.com/?i=tt3896198&apikey=fe869323
+
+  
